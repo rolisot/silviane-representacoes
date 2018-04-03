@@ -1,0 +1,3 @@
+Sitemap: http://www.silvianerepresentacoes.com.br/sitemap.xml
+User-agent: *
+Disallow: 
