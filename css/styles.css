@@ -829,14 +829,12 @@ h3 {
 .obra-image:hover{
     z-index: 500;
 }
-
 .obra-image:hover img{
     -ms-transform: scale(2.5); 
     -webkit-transform: scale(2.5);
     transform: scale(2.5); 
     transition: .5s ease;
 }
-
 .obra-image:hover .description{
     display: table;
     position:absolute;
