@@ -6,11 +6,10 @@ var uglify = require('gulp-uglify');
 var pump = require('pump');
 var htmlmin = require('gulp-htmlmin');
 var csso = require('gulp-csso');
+var inject = require('gulp-inject');
+var replace = require('gulp-replace');
 var runSequence = require("run-sequence");
 
-/**
- * Remove dist directory.
- */
 gulp.task("clean", (done) => {
     return del(["dist"], done);
 });
@@ -55,27 +54,33 @@ gulp.task("minify-js", function (cb) {
     );
 });
 
-// Gulp task to minify CSS files
-gulp.task("minify-css", function () {
-    return gulp.src('css/*.css')
-      // Minify the file
-      .pipe(csso())
-      // Output
-      .pipe(gulp.dest('dist/css'))
-});
+gulp.task('inline-css-minify-html', function () {
+    var sources =  gulp.src(['css/*.css'])
+        .pipe(replace('../', ''))
+        .pipe(csso());
 
-// Gulp task to minify HTML files
-gulp.task("minify-html", function() {
-    return gulp.src(["index.html"])
-      .pipe(htmlmin({
-        collapseWhitespace: true,
-        removeComments: true
-      }))
-      .pipe(gulp.dest("dist"));
+    return gulp.src('*.html')
+        .pipe(inject(sources, {
+            starttag: '<!-- inject:head:css -->',
+            transform: function (filePath, file) {
+                return '<style>' +  file.contents.toString('utf8') + '</style>'
+      }
+  }))
+  .pipe(htmlmin({
+    collapseWhitespace: true,
+    removeComments: true
+  }))
+  .pipe(gulp.dest('dist'));
 });
 
 gulp.task("default", (done) => {
     runSequence("clean", 
-    ["copy-fonts", "copy-icons", "copy-obras", "copy-produtos", "copy-slider","copy-logo"],
-    "minify-js", "minify-css", "minify-html");
+    ["copy-fonts"
+    ,"copy-icons"
+    ,"copy-obras"
+    ,"copy-produtos"
+    ,"copy-slider"
+    ,"copy-logo"
+    ,"minify-js"
+    ,"inline-css-minify-html"]);
  });

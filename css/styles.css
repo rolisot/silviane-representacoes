@@ -33,7 +33,7 @@
     opacity: 1;
     padding: 0;
     margin: 0;
-    visibility: visible;
+    visibility: visible
 }
 
 a {
@@ -42,37 +42,28 @@ a {
 }
 
 a:hover {
-    color: #5b8ecd;
+    color: #5b8ecd
 }
 
-img{
+img {
     max-width: 100%;
-    height: auto;
+    height: auto
 }
 
 h1,
 h2,
 h3 {
     color: #000;
-    font-weight: 300;
+    font-weight: 500;
     margin: .25em 0
 }
 
 h1 {
-    font-size: 26px;
-    line-height: 30px;
-    text-align: center;
     display: none
-}
-
-h1 span{
-    display: block;
-    font-size: 22px;
 }
 
 h2 {
     font-size: 26px;
-    font-weight: 500;
     line-height: 40px;
     text-align: center;
     text-transform: uppercase
@@ -80,7 +71,6 @@ h2 {
 
 h3 {
     font-size: 18px;
-    font-weight: 500;
     line-height: 28px
 }
 
@@ -92,16 +82,16 @@ h3 {
     z-index: 999;
     top: 0;
     left: 0;
+    right: 0;
     background-color: #fff;
-    box-shadow: 0px 0px 10px rgba(0,0,0,0.5);
-    -webkit-box-shadow: 0px 0px 10px rgba(0,0,0,0.5);
-    -moz-box-shadow: 0px 0px 10px rgba(0,0,0,0.5);
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+    -webkit-box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+    -moz-box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
     width: 100%;
     height: 80px;
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
-    right: 0;
     -webkit-backface-visibility: hidden;
     backface-visibility: hidden
 }
@@ -114,7 +104,6 @@ h3 {
     font-variant: normal;
     line-height: 1;
     -moz-osx-font-smoothing: grayscale;
-    speak: none;
     text-rendering: auto;
     text-transform: none;
     -webkit-font-smoothing: antialiased
@@ -126,7 +115,7 @@ h3 {
     text-align: right;
     position: absolute;
     right: 5px;
-    top: 20px;
+    top: 20px
 }
 
 .contacts {
@@ -135,70 +124,63 @@ h3 {
     text-align: right;
     font-size: 22px;
     padding: 0 2px;
-    color: #333;
-}
-
-.text {
-    font-size: 14px;
-    font-style: normal;
-    top: -6px
+    color: #333
 }
 
 .headerContact {
     display: inline-block;
+    width: 40px;
     height: 40px;
     line-height: 40px;
     text-align: center;
-    width: 40px;
     border-radius: 100%;
     color: #333;
     transition: background-color .4s, background-color .4s;
     position: relative;
-    box-shadow: 0px 0px 6px rgba(0,0,0,0.5);
-    -webkit-box-shadow: 0px 0px 6px rgba(0,0,0,0.5);
-    -moz-box-shadow: 0px 0px 6px rgba(0,0,0,0.5);
+    box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.5);
+    -webkit-box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.5);
+    -moz-box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.5)
 }
 
 .headerContact:hover {
-    color: #5b8ecd;
+    color: #5b8ecd
 }
 
 #logo {
     position: absolute;
-    top: 14px;
+    top: 14px
 }
 
-#logo-imagem{
+#logo-imagem {
     width: 50px;
-    height: 50px;
+    height: 50px
 }
 
-#logo-nome{
+#logo-nome {
     color: #555;
     margin-top: -55px !important;
     margin-left: 50px;
     font-size: 17px;
-    line-height: 22px;
+    line-height: 22px
 }
 
-#logo-nome label{
-    cursor: pointer !important;
+#logo-nome label {
+    cursor: pointer !important
 }
 
-#logo-nome span{
+#logo-nome span {
     display: block;
-    font-size: 13px;
+    font-size: 13px
 }
-.logo-nome-bold{
+
+.logo-nome-bold {
     text-transform: uppercase
 }
 
-#topbar, #navbar{
-    display:none;
-}
-
-#whatsapp{
-    display:none;
+#topbar,
+#navbar,
+#whatsapp {
+    display: none
 }
 
 #obras,
@@ -210,25 +192,25 @@ h3 {
     text-align: left;
     padding: 0 15px;
     margin: 0 auto;
-    text-align: justify;			
+    text-align: justify
 }
 
 #main {
     padding: 0;
     margin: 0;
     overflow: hidden;
-    margin-top: 80px;
+    margin-top: 80px
 }
 
 #obras,
 #parceiros,
 #produtos,
 #contact {
-    background-color: #f9f9f9;
+    background-color: #f9f9f9
 }
 
-#sobre h2{
-    display:none;
+#sobre h2 {
+    display: none
 }
 
 .slideshow-container {
@@ -238,84 +220,74 @@ h3 {
     left: 0;
     animation: 30s slidy infinite;
     animation-direction: normal;
-    white-space: nowrap;
+    white-space: nowrap
 }
 
-.mySlides{
+.mySlides {
     width: 20%;
-    float: left;
+    float: left
 }
 
 .slide {
     float: left
 }
 
-@keyframes slidy{
-    0%{
+@keyframes slidy {
+    0% {
         left: 0%
     }
-
-    18%{
+    18% {
         left: 0%;
     }
-
-    20%{
+    20% {
         left: -100%;
     }
-
-    38%{
+    38% {
         left: -100%;
     }
-
-    40%{
+    40% {
         left: -200%;
     }
-
-    58%{
+    58% {
         left: -200%;
     }
-
-    60%{
+    60% {
         left: -300%;
     }
-
-    78%{
+    78% {
         left: -300%;
     }
-
-    80%{
+    80% {
         left: -400%;
     }
-
-    98%{
+    98% {
         left: -400%;
     }
-
-    100%{
+    100% {
         left: 0%;
     }
 }
 
 .caption {
+    display: none;
     width: 100%;
-    margin-top:-30px;
+    margin-top: -30px;
     float: left;
     left: 0;
     right: 0;
-    bottom:0;
+    bottom: 0;
     background: rgba(0, 0, 0, .5);
     color: #fff;
     font-size: 16px;
     text-align: center;
     overflow: hidden;
     line-height: 30px;
-    text-transform:initial;
-    font-weight:400;
-    display: none
+    text-transform: initial;
+    font-weight: 400
 }
 
-.caption-show{
-    display: block !important;
+.caption-show {
+    display: block !important
 }
 
 .link {
@@ -337,9 +309,9 @@ h3 {
     background-color: #ffffff;
     padding: 10px;
     border-radius: 5px;
-    box-shadow: 0px 0px 10px rgba(0,0,0,0.5);
-    -webkit-box-shadow: 0px 0px 10px rgba(0,0,0,0.5);
-    -moz-box-shadow: 0px 0px 10px rgba(0,0,0,0.5);
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+    -webkit-box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+    -moz-box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5)
 }
 
 .feature-item {
@@ -358,7 +330,7 @@ h3 {
     text-align: left
 }
 
-.feature-item-image{
+.feature-item-image {
     margin-top: 5px
 }
 
@@ -369,35 +341,37 @@ h3 {
     text-align: justify
 }
 
-.parceiros-button,        
-.produtos-button{
+.parceiros-button,
+.produtos-button {
     background-color: rgba(29, 65, 115, 0.8);
     padding: 7px;
     border-radius: 4px;
-    cursor: pointer;
+    cursor: pointer
 }
 
-.produtos-killing{
+.produtos-killing {
     right: 185px !important
 }
 
-.parceiros-button:hover,        
-.produtos-button:hover{
+.parceiros-button:hover,
+.produtos-button:hover,
+.btn:hover,
+#btn-maps-close:hover {
     background-color: rgba(91, 142, 205, 0.8);
     color: #fff
 }
 
-.produtos-button{
+.produtos-button {
     position: absolute;
     bottom: 19px;
-    right: 10px;
+    right: 10px
 }
 
-#parceiros .feature-block .feature-item-title{
+#parceiros .feature-block .feature-item-title {
     display: none
 }
 
-#parceiros .feature-block .feature-item-image{
+#parceiros .feature-block .feature-item-image {
     text-align: center
 }
 
@@ -422,7 +396,71 @@ h3 {
 }
 
 .icon-mobile:before {
-    content: "\e958";
+    content: "\e958"
+}
+
+.obras-galeria {
+    position: relative;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center
+}
+
+.obra-image {
+    position: relative;
+    margin: 20px;
+    height: 150px;
+    box-sizing: border-box;
+    align-items: baseline
+}
+
+.obra-image img {
+    border: 3px solid white;
+    box-shadow: 0px 0px 8px rgba(0, 0, 0, .3);
+    overflow: hidden;
+    height: inherit
+}
+
+.obra-image .description {
+    display: none
+}
+
+.obra-image p {
+    margin: 0px;
+    font-size: 16px;
+    color: #f1f1f1;
+    font-weight: 300
+}
+
+.obra-image p.construtora {
+    font-size: 14px
+}
+
+.obra-image:hover {
+    z-index: 500
+}
+
+.obra-image:hover img {
+    -ms-transform: scale(2.5);
+    -webkit-transform: scale(2.5);
+    transform: scale(2.5);
+    transition: .5s ease
+}
+
+.obra-image:hover .description {
+    display: table;
+    position: absolute;
+    width: 150%;
+    padding: 10px 0px;
+    bottom: -80px;
+    left: 0;
+    background: rgba(0, 0, 0, 0.5)
 }
 
 #footer {
@@ -440,7 +478,7 @@ h3 {
 #social {
     width: 100%;
     text-align: right;
-    margin-left: -20px;
+    margin-left: -20px
 }
 
 #social-icons-list {
@@ -449,10 +487,10 @@ h3 {
     margin: 0 -7.5px
 }
 
-#btn-map{
+#btn-map {
     position: absolute;
     float: left;
-    left: 0;
+    left: 0
 }
 
 .social-icons-item {
@@ -464,38 +502,40 @@ h3 {
 
 #address {
     display: none;
-    font-style:normal;
-    font-size:14px;
+    font-style: normal;
+    font-size: 14px
 }
 
 #contact {
     margin-bottom: 80px;
     overflow: hidden;
     padding-bottom: 30px;
-    text-align: center;
+    text-align: center
 }
 
-#contact-container{
-   text-align: left;
-   padding: 20px;
-   color: #333 !important;
+#contact-container {
+    text-align: left;
+    padding: 20px;
+    color: #333 !important
 }
 
-#contact ul{
-    padding: 0;
+#contact ul {
+    padding: 0
 }
 
-#contact ul li{
+#contact ul li {
     list-style-position: inside;
-    color: #333 !important;
+    color: #333 !important
 }
 
-#email{
-    color:#333;
+#email {
+    color: #333
 }
-#email:hover{
-     color: #5b8ecd;
+
+#email:hover {
+    color: #5b8ecd
 }
+
 #contact-form-title {
     margin-top: 0
 }
@@ -528,7 +568,7 @@ h3 {
     height: auto;
     overflow: auto;
     font-family: Roboto;
-    font-style: normal;
+    font-style: normal
 }
 
 .btn {
@@ -551,45 +591,42 @@ h3 {
     border: 1px solid transparent;
     border-radius: 4px;
     color: #fff;
-    background-color: rgba(29, 65, 115, 0.8);
+    background-color: rgba(29, 65, 115, 0.8)
 }
 
-.btn:hover{
-    background-color: rgba(91, 142, 205, 0.8);
-    color: #fff !important
-}
-
-#server-message{
-    display:none;
-    position:absolute;
-    width:80%;
-    height:50px;
-    background-color:#ccc;
-    text-align:center;
-
-     animation:signup-response 3s 1;
-    -webkit-animation:signup-response 3s 1;
+#server-message {
+    display: none;
+    position: absolute;
+    width: 80%;
+    height: 50px;
+    background-color: #ccc;
+    text-align: center;
+    animation: signup-response 3s 1;
+    -webkit-animation: signup-response 3s 1;
     animation-fill-mode: forwards;
-
-    animation-delay:2s;
-    -webkit-animation-delay:1s; /* Safari and Chrome */
+    animation-delay: 2s;
+    -webkit-animation-delay: 1s;
     -webkit-animation-fill-mode: forwards;
-    -webkit-transition-timing-function: ease-out; /* Safari and Chrome */
-    transition-timing-function: ease-out;
+    -webkit-transition-timing-function: ease-out;
+    transition-timing-function: ease-out
 }
 
-@keyframes signup-response{
-    from {opacity :1;}
-    to {opacity :0;}
+@keyframes signup-response {
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+    }
 }
 
-@-webkit-keyframes signup-response{
-    from {opacity :1;}
-    to {opacity :0;}
-}
-
-.btn:hover {
-    color: #5b8ecd;
+@-webkit-keyframes signup-response {
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+    }
 }
 
 #my-lightbox {
@@ -615,7 +652,6 @@ h3 {
     position: absolute;
     top: 5px;
     right: 5px;
-    background-color: #ccc;
     transform: translateZ(0)
 }
 
@@ -626,220 +662,133 @@ h3 {
     text-align: center
 }
 
-@media only screen and (min-width: 768px){
-
-    #header{
-        height:100px;
+@media only screen and (min-width: 768px) {
+    #header {
+        height: 100px
     }
-
-    #contact-buttons{
-        display:none;
+    #contact-buttons {
+        display: none
     }
-
-    #logo{
+    #logo {
         top: 10px;
-        margin-top:22px;
+        margin-top: 22px
     }
-
-    #topbar{
+    #topbar {
         position: absolute;
-        display:block;
+        display: block;
         top: 0;
         background-color: #1d4173;
         color: #fff;
-        text-align:center;
-        width:100%;
-        padding: 0;    
+        text-align: center;
+        width: 100%;
+        padding: 0
     }
-
-    #topbar span{
-        padding: 0 25px 0 7px;
+    #topbar span {
+        padding: 0 25px 0 7px
     }
-
-    #navbar{
-        float: right;
+    #navbar {
         position: absolute;
-        display:inline-block;
+        display: inline-block;
         text-align: right;
         right: 5px;
-        top: 51px;
+        top: 51px
     }
-
-    #navlist{
-        display:inline;
+    #navlist {
         float: left;
         margin: 0;
-        list-style: none;
+        list-style: none
     }
-
-    #navlist li{
+    #navlist li {
         float: left;
         position: relative;
-        display: block;
+        display: block
     }
-
     #navlist li a {
         color: #555;
         padding: 10px 15px;
-        text-transform: uppercase;
+        text-transform: uppercase
     }
-
     #navlist li a:hover {
         background: transparent;
-        color: #5b8ecd;
+        color: #5b8ecd
     }
-
     #main {
         overflow: hidden
     }
-
-    .caption{
-         width: 60%;
-         margin-top: -125px;
-         padding:15px 15px;
-         font-size: 36px;
-         background: rgba(0, 0, 0, .3);
-         line-height:40px;
-         display: none
-     }
-
-    .caption span{
-         display: block;
-     }
-
+    .caption {
+        display: none;
+        width: 60%;
+        margin-top: -125px;
+        padding: 15px 15px;
+        font-size: 36px;
+        background: rgba(0, 0, 0, .3);
+        line-height: 40px
+    }
+    .caption span {
+        display: block
+    }
     #obras,
     #sobre,
     #parceiros,
-    #produtos{
-        text-align:center;
+    #produtos {
+        text-align: center
     }
-
-    #produtos h2, #obras h2{
+    #produtos h2,
+    #obras h2 {
         margin: 0;
-        padding-top: 10px;
+        padding-top: 10px
     }
-
-    #parceiros{
-        padding: 10px 0;
+    #parceiros {
+        padding: 10px 0
     }
-
-    #sobre h2{
-        display:block;
+    #sobre h2 {
+        display: block
     }
-
-    .feature-block-container{
-        padding: 0 40px;
+    .feature-block-container {
+        padding: 0 40px
     }
-
-    .feature-block{
+    .feature-block {
         vertical-align: top;
         overflow: hidden;
         text-align: center;
-        margin: 0 0 40px 0;
+        margin: 0 0 40px 0
     }
-
     .feature-item-title,
-    .feature-item-text{
+    .feature-item-text {
         text-align: center
     }
-    
-    .pull-left{
-        margin-left:20px;
+    .pull-left {
+        margin-left: 20px
     }
-
-    .feature-item{
-        margin-right:10px;
+    .feature-item {
+        margin-right: 10px
     }
-
-    .feature-block::after{
-        clear:both
-    } 
-
+    .feature-block::after {
+        clear: both
+    }
     #address {
         display: inline;
         margin-left: 10px;
         padding: 5px 0;
-        vertical-align: top;
+        vertical-align: top
     }
-} 
+}
 
-@media only screen and (min-width: 830px){
-
-    #logo{
-        margin-top:22px;
+@media only screen and (min-width: 830px) {
+    #logo {
+        margin-top: 22px;
         left: 10px
     }
-
-    #logo-imagem{
+    #logo-imagem {
         width: 60px;
-        height: 60px;
+        height: 60px
     }
-
-    #logo-nome{
-       margin-top: -60px !important;
-       margin-left: 65px;
-       font-size: 20px;
+    #logo-nome {
+        margin-top: -60px !important;
+        margin-left: 65px;
+        font-size: 20px
     }
-
-    #logo-nome span{
-        font-size: 16px;
+    #logo-nome span {
+        font-size: 16px
     }
-} 
-
-.obras-galeria{
-    position: relative;
-    display: -webkit-box;
-    display: -moz-box;
-    display: -ms-flexbox;
-    display: -webkit-flex;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
-}
-
-.obra-image { 
-    position: relative; 
-    margin: 20px; 
-    height: 150px;
-    box-sizing: border-box;
-    align-items: baseline;
-}
-.obra-image img {
-    border: 3px solid white;
-    box-shadow: 0px 0px 8px rgba(0,0,0,.3);
-    overflow: hidden;
-    height: inherit;
-}
-.obra-image .description{
-    display: none;
-}
-.obra-image p{
-    margin:0px;
-    font-size: 16px;
-    color:#f1f1f1;
-    font-weight: 300;
-}
-
-.obra-image p.construtora{
-    font-size: 14px;
-}
-.obra-image:hover{
-    z-index: 500;
-}
-.obra-image:hover img{
-    -ms-transform: scale(2.5); 
-    -webkit-transform: scale(2.5);
-    transform: scale(2.5); 
-    transition: .5s ease;
-}
-.obra-image:hover .description{
-    display: table;
-    position:absolute;
-    width: 150%;
-    padding: 10px 0px;
-    bottom:-80px; 
-    left: 0;
-    background: rgba(0, 0, 0, 0.5);
 }
