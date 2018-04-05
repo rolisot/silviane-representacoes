@@ -10,22 +10,6 @@ function loadEvents() {
         document.getElementById("whatsapp").style.display = "inline";
 }
 
-function check_webp_feature(A, e) {
-    var t = {
-            lossy: "UklGRiIAAABXRUJQVlA4IBYAAAAwAQCdASoBAAEADsD+JaQAA3AAAAAA",
-            lossless: "UklGRhoAAABXRUJQVlA4TA0AAAAvAAAAEAcQERGIiP4HAA==",
-            alpha: "UklGRkoAAABXRUJQVlA4WAoAAAAQAAAAAAAAAAAAQUxQSAwAAAARBxAR/Q9ERP8DAABWUDggGAAAABQBAJ0BKgEAAQAAAP4AAA3AAP7mtQAAAA==",
-            animation: "UklGRlIAAABXRUJQVlA4WAoAAAASAAAAAAAAAAAAQU5JTQYAAAD/////AABBTk1GJgAAAAAAAAAAAAAAAAAAAGQAAABWUDhMDQAAAC8AAAAQBxAREYiI/gcA"
-        },
-        l = new Image;
-    l.onload = function() {
-        var A = l.width > 0 && l.height > 0;
-        e(!0, A)
-    }, l.onerror = function() {
-        e(!1, !1)
-    }, l.src = "data:image/webp;base64," + t[A]
-}
-
 var isMobile = {
     Android: function () {
         return navigator.userAgent.match(/Android/i);
@@ -53,16 +37,22 @@ function loadIframeDefer() {
         A.getAttribute("data-src") && A.setAttribute("src", A.getAttribute("data-src"))
 }
 
-function loadImagesDefer(A) {
+function loadImagesDefer() {
     for (var e = document.getElementsByClassName("slide"), t = 0; t < e.length; t++)
         if (e[t].getAttribute("data-src")) {
             var l = e[t].getAttribute("data-src");
-            A || (l = l.replace("webp", "jpg")), e[t].setAttribute("src", l)
+            e[t].setAttribute("src", l)
+        }
+
+    for (var e = document.getElementsByClassName("lazy-image"), t = 0; t < e.length; t++)
+        if (e[t].getAttribute("data-src")) {
+            var l = e[t].getAttribute("data-src");
+            e[t].setAttribute("src", l)
         }
 }
 
 function init() {
-    check_webp_feature("lossy", loadImagesDefer), loadEvents();
+    loadImagesDefer(); loadEvents();
 }
 
 window.onload = init;
