@@ -275,12 +275,12 @@ h3 {
 }
 
 .link {
-    color: #45aed6
+    color: #0069fb
 }
 
 .link:hover {
-    text-decoration: underline;
-    color: #5b8ecd
+    color: #0069fb;
+    text-decoration: underline
 }
 
 .feature-block {
