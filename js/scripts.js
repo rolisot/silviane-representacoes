@@ -57,41 +57,40 @@ function init() {
 
 window.onload = init;
 
-
 window.addEventListener("load", function () {
     function sendData() {
         var XHR = new XMLHttpRequest();
 
-        // Bind the FormData object and the form element
         var FD = new FormData(form);
         var textMessage = document.getElementById("return-message");
 
-        // Define what happens on successful data submission
         XHR.addEventListener("load", function (event) {
             textMessage.innerText = "Mensagem enviada com sucesso!";
             textMessage.parentNode.style.display = "block";
         });
 
-        // Define what happens in case of error
         XHR.addEventListener("error", function (event) {
             textMessage.innerText = "Falha ao enviar a mensagem!";
             textMessage.parentNode.style.display = "block";
         });
 
-        // Set up our request
         XHR.open("POST", "http://www.silvianerepresentacoes.com.br/sendemail.php");
 
-        // The data sent is what the user provided in the form
         XHR.send(FD);
     }
 
-    // Access the form element...
     var form = document.getElementById("main-contact-form");
 
-    // ...and take over its submit event.
     form.addEventListener("submit", function (event) {
         event.preventDefault();
 
         sendData();
     });
 });
+
+var WebFontConfig = {
+	google: {
+		families: [ 'Roboto:400,300,500,700:latin' ]
+	},
+	timeout: 2000
+};

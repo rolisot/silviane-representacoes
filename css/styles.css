@@ -1,26 +1,10 @@
 @font-face {
-    font-family: Roboto;
-    font-style: normal;
-    font-weight: 300;
-    src: url(../fonts/reboto/roboto-v16-latin-300.eot);
-    src: local('Roboto Light'), local('Roboto-Light'), url(../fonts/reboto/roboto-v16-latin-300.eot?#iefix) format('embedded-opentype'), url(../fonts/reboto/roboto-v16-latin-300.woff2) format('woff2'), url(../fonts/reboto/roboto-v16-latin-300.woff) format('woff'), url(../fonts/reboto/roboto-v16-latin-300.ttf) format('truetype'), url(../fonts/reboto/roboto-v16-latin-300.svg#Roboto) format('svg')
-}
-
-@font-face {
-    font-family: Roboto;
-    font-style: normal;
-    font-weight: 400;
-    src: url(../fonts/reboto/roboto-v16-latin-regular.eot);
-    src: local('Roboto'), local('Roboto-Regular'), url(../fonts/reboto/roboto-v16-latin-regular.eot?#iefix) format('embedded-opentype'), url(../fonts/reboto/roboto-v16-latin-regular.woff2) format('woff2'), url(../fonts/reboto/roboto-v16-latin-regular.woff) format('woff'), url(../fonts/reboto/roboto-v16-latin-regular.ttf) format('truetype'), url(../fonts/reboto/roboto-v16-latin-regular.svg#Roboto) format('svg')
-}
-
-@font-face {
     font-family: icomoon;
     font-style: normal;
     font-weight: 400;
-    src: url(../fonts/icomoon.eot?e7g6g0);
-    src: url(../fonts/icomoon.eot?e7g6g0#iefix) format('embedded-opentype'), url(../fonts/icomoon.woff?e7g6g0) format('woff'), url(../fonts/icomoon.ttf?e7g6g0) format('truetype'), url(../fonts/icomoon.svg?e7g6g0#icomoon) format('svg')
-}
+    src: url(../fonts/icomoon.eot);
+    src: url(../fonts/icomoon.eot) format('embedded-opentype'), url(../fonts/icomoon.woff) format('woff'), url(../fonts/icomoon.ttf) format('truetype'), url(../fonts/icomoon.svg) format('svg')
+} 
 
 #body {
     animation: none;
@@ -54,7 +38,7 @@ h1,
 h2,
 h3 {
     color: #000;
-    font-weight: 500;
+    font-weight: 400;
     margin: .25em 0
 }
 
