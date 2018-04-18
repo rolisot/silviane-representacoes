@@ -409,7 +409,8 @@ h3 {
 }
 
 .obra-image .description {
-    display: none
+    display: none;
+    text-align: center
 }
 
 .obra-image p {
