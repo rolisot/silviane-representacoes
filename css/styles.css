@@ -21,11 +21,20 @@
 }
 
 a {
-    color: #fff;
     text-decoration: none
 }
 
-a:hover {
+a[href^=tel] { color: inherit; text-decoration: none; }
+
+/* a:hover {
+    color: #5b8ecd
+} */
+
+.lnk{
+    color: #fff;
+}
+
+.lnk:hover {
     color: #5b8ecd
 }
 
@@ -272,6 +281,10 @@ h3 {
     display: block !important
 }
 
+.caption-margin {
+    margin-left: 0
+}
+
 .link {
     color: #0069fb
 }
@@ -509,6 +522,10 @@ h3 {
     color: #333 !important
 }
 
+#contact ul li a{
+    color: #333 !important
+}
+
 #email {
     color: #333
 }
@@ -706,6 +723,9 @@ h3 {
     }
     .caption span {
         display: block
+    }
+    .caption-margin {
+        margin-left: 37%
     }
     #obras,
     #sobre,
